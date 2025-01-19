@@ -1,0 +1,45 @@
+@tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    /* Custom styles for dark mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #020202; /* Black background */
+        color: #f1f1f1; /* Seashell text */
+      }
+      .bg-white {
+        background-color: #020202; /* Black background for cards */
+      }
+      .border-gray-200 {
+        border-color: #f1f1f1; /* Seashell border */
+      }
+      .text-gray-900 {
+        color: #f1f1f1; /* Seashell text for dark mode */
+      }
+      .dark\:bg-gray-800 {
+        background-color: #020202; /* Black background */
+      }
+      .dark\:border-gray-700 {
+        border-color: #f1f1f1; /* Seashell border */
+      }
+    }
+
+    /* Apply Inter font globally */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Additional styles for Wabi-Sabi aesthetics */
+    .rounded-lg {
+      border-radius: 0.5rem; /* Rounded edges */
+    }
+    .shadow-lg {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+    .m-4 {
+      margin: 1rem; /* Increased margin for whitespace */
+    }
+    .p-4 {
+      padding: 1rem; /* Increased padding for whitespace */
+    }
